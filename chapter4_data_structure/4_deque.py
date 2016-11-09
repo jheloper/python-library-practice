@@ -17,14 +17,20 @@ for v in range(10):
 
 deq3 = collections.deque('12345')
 print(deq3)
+
+# rotate : 파라미터로 양수를 지정하면 deque의 요소가 오른쪽으로 회전, 음수를 지정하면 왼쪽으로 회전.
 deq3.rotate(3)
 print(deq3)
 deq3.rotate(-3)
 print(deq3)
+
+# popleft : deque의 맨 앞 요소를 가져옴.
 first = deq3.popleft()
 print(first)
 deq3.rotate(-1)
 print(deq3)
+
+# appendleft : deque의 맨 앞에 요소를 추가함.
 deq3.appendleft(first)
 print(deq3)
 deq3.rotate(1)
