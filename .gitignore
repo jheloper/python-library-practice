@@ -93,3 +93,6 @@ myvenv
 
 # IDE
 .idea
+
+# others
+*.pem
